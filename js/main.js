@@ -161,6 +161,24 @@
     form.reset();
   });
 
+  /* ── Pricing: monthly / annual billing toggle ────────────────── */
+  var billingButtons = document.querySelectorAll('.billing-btn');
+  var priceSwitchEls = document.querySelectorAll('.price-num[data-monthly], .price-per[data-monthly], .price-note[data-monthly]');
+
+  billingButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var mode = btn.dataset.billing; // 'monthly' | 'annual'
+      billingButtons.forEach(function (b) {
+        var isActive = b === btn;
+        b.classList.toggle('active', isActive);
+        b.setAttribute('aria-pressed', String(isActive));
+      });
+      priceSwitchEls.forEach(function (el) {
+        if (el.dataset[mode]) el.textContent = el.dataset[mode];
+      });
+    });
+  });
+
   /* ── Legal modal (Terms / Privacy) ───────────────────────────── */
   var LEGAL_CONTENT = {
     terms: {

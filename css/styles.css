@@ -718,6 +718,60 @@ a { color: inherit; }
 .qa-3 { background: linear-gradient(135deg, #FFC24B, #FF6B6B); }
 
 /* ── Pricing ──────────────────────────────────────────────────── */
+.billing-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+.billing-toggle {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.billing-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-3);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+.billing-btn:hover { color: var(--text); }
+.billing-btn.active {
+  background: var(--neon);
+  color: #0A140A;
+}
+.billing-save {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(204, 255, 0, 0.14);
+  color: var(--neon);
+}
+.billing-btn.active .billing-save {
+  background: rgba(10, 20, 10, 0.18);
+  color: #0A140A;
+}
+.price-note {
+  min-height: 1.2em;          /* keeps cards aligned when the text changes */
+  margin: -0.2rem 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
