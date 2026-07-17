@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MatchMind — The Tennis Journal With an AI Coach That Remembers</title>
+  <meta name="description" content="MatchMind is a tennis match journal with AI coaching memory. Log matches, track opponents head-to-head, and get tactical briefings from an AI coach that remembers every match you've played." />
+  <meta name="theme-color" content="#0A140A" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MatchMind — The Tennis Journal With an AI Coach That Remembers" />
+  <meta property="og:description" content="Log matches. Decode opponents. Get coaching that compounds — your AI coach remembers every match and every pattern." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MatchMind — AI Coaching Memory for Tennis Players" />
+  <meta name="twitter:description" content="The match journal that turns your tennis history into a game plan." />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MatchMind",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "Web",
+    "description": "A tennis match journaling app with AI coaching memory, opponent head-to-head statistics, and pre-match tactical briefings.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ══════════════════ Header / Navigation ══════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav-brand" href="#top" aria-label="MatchMind home">
+        <svg class="nav-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="26" fill="#CCFF00"/>
+          <path d="M12 16 A 36 36 0 0 1 12 48" fill="none" stroke="#0A140A" stroke-width="4" stroke-linecap="round"/>
+          <path d="M52 16 A 36 36 0 0 0 52 48" fill="none" stroke="#0A140A" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span>Match<em>Mind</em></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#memory">AI Coach</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="#cta">Log in</a>
+          <a class="btn btn-primary" href="#cta">Get started free</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ══════════════════ Hero ══════════════════ -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5-2 8h-10c0-3-2-5-2-8a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg>
+            AI coaching that compounds
+          </p>
+          <h1 class="reveal delay-1">Your matches,<br />remembered.<br /><span class="accent">Your game, decoded.</span></h1>
+          <p class="hero-sub reveal delay-2">
+            MatchMind is the tennis journal with a memory. Log every match, and your AI coach
+            connects the dots — recurring patterns, opponent tendencies, and the mental habits
+            that decide tight sets.
+          </p>
+          <div class="hero-cta reveal delay-3">
+            <a class="btn btn-primary btn-lg" href="#cta">Start your journal</a>
+            <a class="btn btn-outline btn-lg" href="#how-it-works">See how it works</a>
+          </div>
+          <ul class="hero-trust reveal delay-4">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Free to start
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              2-minute match logging
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Your data, exportable anytime
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product mockup (decorative, built in CSS) -->
+        <div class="hero-visual reveal delay-2" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="app-topbar">
+                <span class="app-title">Home</span>
+                <span class="app-avatar">AK</span>
+              </div>
+              <div class="app-hero-card">
+                <div>
+                  <span class="app-kpi">68%</span>
+                  <span class="app-kpi-label">Win rate · last 10</span>
+                </div>
+                <svg class="app-spark" viewBox="0 0 120 40" preserveAspectRatio="none">
+                  <polyline points="0,32 15,28 30,30 45,20 60,24 75,14 90,16 105,8 120,10"
+                            fill="none" stroke="#CCFF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="app-ai-card">
+                <span class="app-ai-dot"></span>
+                <p><strong>Coach:</strong> Third straight win where your slice reset baseline rallies. Against big hitters, that's your pattern — trust it earlier.</p>
+              </div>
+              <div class="app-match-row">
+                <span class="app-result win">W</span>
+                <div class="app-match-meta"><strong>vs. R. Alvarez</strong><span>6-4 · 7-5 · Clay</span></div>
+              </div>
+              <div class="app-match-row">
+                <span class="app-result loss">L</span>
+                <div class="app-match-meta"><strong>vs. T. Okafor</strong><span>4-6 · 6-7 · Hard</span></div>
+              </div>
+              <div class="app-bottomnav">
+                <span class="active"></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <!-- Floating memory chips -->
+          <div class="chip chip-1">
+            <span class="chip-type">PATTERN</span> Slow starts on clay
+            <span class="chip-bar"><span style="width:82%"></span></span>
+          </div>
+          <div class="chip chip-2">
+            <span class="chip-type strength">STRENGTH</span> Slice under pressure
+            <span class="chip-bar"><span style="width:91%"></span></span>
+          </div>
+          <div class="chip chip-3">
+            <span class="chip-type weakness">FOCUS</span> 2nd-serve %, tight games
+            <span class="chip-bar"><span style="width:64%"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ Stats strip ══════════════════ -->
+    <section class="stats" aria-label="MatchMind in numbers">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-value"><span class="count" data-target="120000">0</span>+</span>
+          <span class="stat-label">Matches journaled</span>
+        </div>
+        <div class="stat reveal delay-1">
+          <span class="stat-value"><span class="count" data-target="18000">0</span>+</span>
+          <span class="stat-label">Opponents scouted</span>
+        </div>
+        <div class="stat reveal delay-2">
+          <span class="stat-value"><span class="count" data-target="92">0</span>%</span>
+          <span class="stat-label">Say briefings changed their game plan</span>
+        </div>
+        <div class="stat reveal delay-3">
+          <span class="stat-value"><span class="count" data-target="2">0</span> min</span>
+          <span class="stat-label">To log a match, court-side</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ Footer ══════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-brand" href="#top" aria-label="MatchMind home">
+          <svg class="nav-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="26" fill="#CCFF00"/>
+            <path d="M12 16 A 36 36 0 0 1 12 48" fill="none" stroke="#0A140A" stroke-width="4" stroke-linecap="round"/>
+            <path d="M52 16 A 36 36 0 0 0 52 48" fill="none" stroke="#0A140A" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span>Match<em>Mind</em></span>
+        </a>
+        <p>The tennis journal with an AI coach that remembers.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Product">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#memory">AI Coach</a></li>
+          <li><a href="#opponents">Opponent prep</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#testimonials">Stories</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#cta">Early access</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#" data-legal="terms">Terms of Service</a></li>
+          <li><a href="#" data-legal="privacy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> MatchMind. All rights reserved.</p>
+      <p class="footer-tag">Made for players who hate losing the same way twice.</p>
+    </div>
+  </footer>
+
+  <script s
