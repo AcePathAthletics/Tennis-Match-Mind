@@ -176,10 +176,6 @@
       priceSwitchEls.forEach(function (el) {
         if (el.dataset[mode]) el.textContent = el.dataset[mode];
       });
-      // Struck-through regular price: keep the screen-reader prefix, swap the amount.
-      document.querySelectorAll('.price-was[data-monthly]').forEach(function (el) {
-        if (el.dataset[mode] && el.lastChild) el.lastChild.textContent = el.dataset[mode];
-      });
     });
   });
 
