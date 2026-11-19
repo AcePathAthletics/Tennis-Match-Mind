@@ -806,6 +806,15 @@ a { color: inherit; }
   border-radius: 999px;
   white-space: nowrap;
 }
+.price-promo {
+  display: block; width: fit-content;
+  margin: 0 0 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 194, 75, 0.14);
+  color: var(--amber);
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
 .price {
   font-family: var(--font-display);
   margin: 0.2rem 0 0.4rem;
